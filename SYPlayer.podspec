@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-s.name             = "SYPlayer"
+s.name             = "smartyard-player"
 s.version          = "1.0.0"
 s.summary          = "Video Player Using Swift, based on AVPlayer"
 s.swift_versions   = "5"

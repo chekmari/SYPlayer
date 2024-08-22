@@ -21,10 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2CA6F056809CC2F9921348D9 /* Pods-SYPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SYPlayer.release.xcconfig"; path = "Target Support Files/Pods-SYPlayer/Pods-SYPlayer.release.xcconfig"; sourceTree = "<group>"; };
 		6A302EE81DF199F700AD54B6 /* SYPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SYPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A5B61CE1EADB5DA00158FF9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		996FFC2834933FE8B9A8F4FD /* Pods-SYPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SYPlayer.debug.xcconfig"; path = "Target Support Files/Pods-SYPlayer/Pods-SYPlayer.debug.xcconfig"; sourceTree = "<group>"; };
 		FAFAE6FA2C77728800299519 /* SYPlayerControlView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SYPlayerControlView.swift; sourceTree = "<group>"; };
 		FAFAE6FB2C77728800299519 /* Pod_Asset_SYPlayer.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Pod_Asset_SYPlayer.xcassets; sourceTree = "<group>"; };
 		FAFAE6FC2C77728800299519 /* SYPlayerResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SYPlayerResource.swift; sourceTree = "<group>"; };
@@ -52,8 +50,6 @@
 		1EE509963C5E9D47F5BD02FE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				996FFC2834933FE8B9A8F4FD /* Pods-SYPlayer.debug.xcconfig */,
-				2CA6F056809CC2F9921348D9 /* Pods-SYPlayer.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -63,7 +59,6 @@
 			children = (
 				6A5B61C31EADB5DA00158FF9 /* Source */,
 				6A302EE91DF199F700AD54B6 /* Products */,
-				6A6FDBA11DF19A39003727BC /* Frameworks */,
 				1EE509963C5E9D47F5BD02FE /* Pods */,
 			);
 			sourceTree = "<group>";
@@ -91,13 +86,6 @@
 			);
 			path = Source;
 			sourceTree = SOURCE_ROOT;
-		};
-		6A6FDBA11DF19A39003727BC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
 		};
 		FAFAE6FD2C77728800299519 /* Default */ = {
 			isa = PBXGroup;
@@ -143,7 +131,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A302EF01DF199F700AD54B6 /* Build configuration list for PBXNativeTarget "SYPlayer" */;
 			buildPhases = (
-				D65C87167BEAC39DCF9DCFE5 /* [CP] Check Pods Manifest.lock */,
 				6A302EE31DF199F700AD54B6 /* Sources */,
 				6A302EE41DF199F700AD54B6 /* Frameworks */,
 				6A302EE51DF199F700AD54B6 /* Headers */,
@@ -203,31 +190,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		D65C87167BEAC39DCF9DCFE5 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SYPlayer-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6A302EE31DF199F700AD54B6 /* Sources */ = {
@@ -374,7 +336,6 @@
 		};
 		6A302EF11DF199F700AD54B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 996FFC2834933FE8B9A8F4FD /* Pods-SYPlayer.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
@@ -405,7 +366,6 @@
 		};
 		6A302EF21DF199F700AD54B6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2CA6F056809CC2F9921348D9 /* Pods-SYPlayer.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;

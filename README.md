@@ -8,14 +8,8 @@
 
 A video player for iOS, based on AVPlayer, support the horizontal, vertical screen. support adjust volume, brightness and seek by slide, support subtitles.
 
-(https://github.com/BrikerMan/SYPlayer/blob/master/README.zh.md)
-
-## Advanced Customize
-- Subclass `SYPlayerControlView` to create your personal control UI, check the Example.
-- Use the `SYPlayerLayer` with your own player control view.
-
 ## Reference:
-This prohect fork the BMPlayer (https://github.com/BrikerMan/BMPlayer) 
+This project is fork the BMPlayer (https://github.com/BrikerMan/BMPlayer) 
 BMPlayer is project heavily reference the Objective-C version of this project [ZFPlayer](https://github.com/renzifeng/ZFPlayer), thanks for the generous help of ZFPlayer's author.
 
 ## Contact me：

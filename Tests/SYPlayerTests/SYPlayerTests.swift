@@ -1,12 +1,12 @@
 import XCTest
-@testable import BMPlayer
+@testable import SYPlayer
 
-final class BMPlayerTests: XCTestCase {
+final class SYPlayerTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct
         // results.
-        XCTAssertEqual(BMPlayer().text, "Hello, World!")
+        XCTAssertEqual(SYPlayer().text, "Hello, World!")
     }
 
     static var allTests = [

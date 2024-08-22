@@ -1,7 +1,7 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
-## BMPlayer
+## SYPlayer
 
 Copyright (c) 2016 Eliyar Eziz <eliyar917@gmail.com>
 

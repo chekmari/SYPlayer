@@ -1,3 +1,3 @@
-struct BMPlayer {
+struct SYPlayer {
     var text = "Hello, World!"
 }

@@ -1,7 +1,7 @@
 import XCTest
 
-import BMPlayerTests
+import SYPlayerTests
 
 var tests = [XCTestCaseEntry]()
-tests += BMPlayerTests.allTests()
+tests += SYPlayerTests.allTests()
 XCTMain(tests)

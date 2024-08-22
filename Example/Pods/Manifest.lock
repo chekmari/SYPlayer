@@ -1,10 +1,10 @@
 PODS:
-  - BMPlayer/CacheSupport (1.3.0):
-    - BMPlayer/Core
+  - SYPlayer/CacheSupport (1.3.0):
+    - SYPlayer/Core
     - NVActivityIndicatorView (~> 4.7.0)
     - SnapKit (~> 5.0.0)
     - VIMediaCache
-  - BMPlayer/Core (1.3.0)
+  - SYPlayer/Core (1.3.0)
   - NVActivityIndicatorView (4.7.0):
     - NVActivityIndicatorView/Presenter (= 4.7.0)
   - NVActivityIndicatorView/Presenter (4.7.0)
@@ -13,7 +13,7 @@ PODS:
   - VIMediaCache (0.4)
 
 DEPENDENCIES:
-  - BMPlayer/CacheSupport (from `../`)
+  - SYPlayer/CacheSupport (from `../`)
   - SwipeBack
 
 SPEC REPOS:
@@ -24,11 +24,11 @@ SPEC REPOS:
     - VIMediaCache
 
 EXTERNAL SOURCES:
-  BMPlayer:
+  SYPlayer:
     :path: "../"
 
 SPEC CHECKSUMS:
-  BMPlayer: 92a1c2a721694ba6ab107661e7aff670909671c6
+  SYPlayer: 92a1c2a721694ba6ab107661e7aff670909671c6
   NVActivityIndicatorView: b19ddab2576f805cbe0fb2306cba3476e09a1dea
   SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
   SwipeBack: d6759601b40da1f4161033feb30ab475d7d04322

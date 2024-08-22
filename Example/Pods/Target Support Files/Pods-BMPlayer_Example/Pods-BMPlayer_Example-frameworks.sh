@@ -153,14 +153,14 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/BMPlayer/BMPlayer.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SYPlayer/SYPlayer.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwipeBack/SwipeBack.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/VIMediaCache/VIMediaCache.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/BMPlayer/BMPlayer.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SYPlayer/SYPlayer.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SwipeBack/SwipeBack.framework"

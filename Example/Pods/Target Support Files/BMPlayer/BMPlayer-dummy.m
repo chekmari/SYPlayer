@@ -1,5 +1,5 @@
 #import <Foundation/Foundation.h>
-@interface PodsDummy_BMPlayer : NSObject
+@interface PodsDummy_SYPlayer : NSObject
 @end
-@implementation PodsDummy_BMPlayer
+@implementation PodsDummy_SYPlayer
 @end

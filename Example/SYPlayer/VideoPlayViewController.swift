@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import BMPlayer
+import SYPlayer
 import AVFoundation
 import NVActivityIndicatorView
 

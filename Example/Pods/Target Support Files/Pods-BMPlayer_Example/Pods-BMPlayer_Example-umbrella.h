@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_BMPlayer_ExampleVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_BMPlayer_ExampleVersionString[];
+FOUNDATION_EXPORT double Pods_SYPlayer_ExampleVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_SYPlayer_ExampleVersionString[];
 

@@ -1,15 +1,15 @@
 //
 //  BMPlayerCustomControlView2.swift
-//  BMPlayer
+//  SYPlayer
 //
 //  Created by BrikerMan on 2017/4/6.
 //  Copyright © 2017年 CocoaPods. All rights reserved.
 //
 
 import Foundation
-import BMPlayer
+import SYPlayer
 
-class BMPlayerCustomControlView2: BMPlayerControlView {
+class SYPlayerCustomControlView2: BMPlayerControlView {
     
     var playTimeUIProgressView = UIProgressView()
     var playingStateLabel = UILabel()

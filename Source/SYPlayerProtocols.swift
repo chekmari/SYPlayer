@@ -1,5 +1,5 @@
 //
-//  BMPlayerProtocols.swift
+//  SYPlayerProtocols.swift
 //  Pods
 //
 //  Created by BrikerMan on 16/4/30.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension BMPlayerControlView {
+extension SYPlayerControlView {
     public enum ButtonType: Int {
         case play       = 101
         case pause      = 102
@@ -18,7 +18,7 @@ extension BMPlayerControlView {
     }
 }
 
-extension BMPlayer {
+extension SYPlayer {
     static func formatSecondsToString(_ seconds: TimeInterval) -> String {
         if seconds.isNaN {
             return "00:00"

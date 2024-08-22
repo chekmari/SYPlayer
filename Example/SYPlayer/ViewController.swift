@@ -1,13 +1,13 @@
 //
 //  ViewController.swift
-//  BMPlayer
+//  SYPlayer
 //
 //  Created by Eliyar Eziz on 04/28/2016.
 //  Copyright (c) 2016 Eliyar Eziz. All rights reserved.
 //
 
 import UIKit
-import BMPlayer
+import SYPlayer
 
 class ViewController: UIViewController {
     

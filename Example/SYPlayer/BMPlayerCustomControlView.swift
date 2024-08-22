@@ -1,15 +1,11 @@
 //
-//  BMPlayerCustomControlView.swift
-//  BMPlayer
-//
-//  Created by BrikerMan on 2017/4/4.
-//  Copyright © 2017年 CocoaPods. All rights reserved.
-//
+//  SYPlayerCustomControlView.swift
+//  SYPlayer
 
 import UIKit
 import BMPlayer
 
-class BMPlayerCustomControlView: BMPlayerControlView {
+class SYCustomPlayerControlView: SYPlayerControlView {
     
     var playbackRateButton = UIButton(type: .custom)
     var playRate: Float = 1.0

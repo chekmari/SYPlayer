@@ -55,7 +55,7 @@ public class BMSubtitles {
                 }
                 self?.groups = BMSubtitles.parseSubRip(string) ?? []
             } catch {
-                print("| BMPlayer | [Error] failed to load \(url.absoluteString) \(error.localizedDescription)")
+                print("| SYPlayer | [Error] failed to load \(url.absoluteString) \(error.localizedDescription)")
             }
         }
     }

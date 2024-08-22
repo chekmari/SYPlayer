@@ -1,5 +1,5 @@
-framework module BMPlayer {
-  umbrella header "BMPlayer-umbrella.h"
+framework module SYPlayer {
+  umbrella header "SYPlayer-umbrella.h"
 
   export *
   module * { export * }

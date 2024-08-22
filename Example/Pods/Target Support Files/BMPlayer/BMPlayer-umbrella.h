@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double BMPlayerVersionNumber;
-FOUNDATION_EXPORT const unsigned char BMPlayerVersionString[];
+FOUNDATION_EXPORT double SYPlayerVersionNumber;
+FOUNDATION_EXPORT const unsigned char SYPlayerVersionString[];
 

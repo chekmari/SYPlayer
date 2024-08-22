@@ -26,5 +26,3 @@ BMPlayer is project heavily reference the Objective-C version of this project [Z
 BMPlayer is available under the MIT license. See the LICENSE file for more info.
 SYPlayer is available under the MIT license. See the LICENSE file for more info.
 
-
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FBrikerMan%2FBSYPlayer.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FBrikerMan%2FSYplayer?ref=badge_large)

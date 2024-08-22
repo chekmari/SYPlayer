@@ -1,0 +1,24 @@
+PODS:
+  - lottie-ios (2.5.3)
+  - SnapKit (4.2.0)
+  - VIMediaCache (0.3)
+
+DEPENDENCIES:
+  - lottie-ios
+  - SnapKit
+  - VIMediaCache
+
+SPEC REPOS:
+  trunk:
+    - lottie-ios
+    - SnapKit
+    - VIMediaCache
+
+SPEC CHECKSUMS:
+  lottie-ios: a50d5c0160425cd4b01b852bb9578963e6d92d31
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  VIMediaCache: 02c03af2adf2526eddc8ee3b06e41f26e9546f38
+
+PODFILE CHECKSUM: 8e6de988ae177db0506a9acdbe43da9a217f4611
+
+COCOAPODS: 1.15.2

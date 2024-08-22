@@ -1,6 +1,0 @@
-framework module Pods_SYPlayer_Example {
-  umbrella header "Pods-SYPlayer_Example-umbrella.h"
-
-  export *
-  module * { export * }
-}

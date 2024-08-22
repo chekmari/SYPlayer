@@ -10,7 +10,7 @@ import UIKit
 import SYPlayer
 
 class SYCustomPlayer: SYPlayer {
-    override func storyBoardCustomControl() -> BMPlayerControlView? {
-        return BMPlayerCustomControlView()
+    override func storyBoardCustomControl() -> SYPlayerControlView? {
+        return SYPlayerCustomControlView()
     }
 }

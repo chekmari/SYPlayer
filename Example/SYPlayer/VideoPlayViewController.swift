@@ -1,6 +1,6 @@
 //
 //  VideoPlayViewController.swift
-//  BMPlayer
+//  SYPlayer
 //
 //  Created by BrikerMan on 16/4/28.
 //  Copyright © 2016年 CocoaPods. All rights reserved.
@@ -23,7 +23,7 @@ class VideoPlayViewController: UIViewController {
   
   //    @IBOutlet weak var player: BMPlayer!
   
-  var player: BMPlayer!
+  var player: SYPlayer!
   
   var index: IndexPath!
   
@@ -58,17 +58,17 @@ class VideoPlayViewController: UIViewController {
    prepare playerView
    */
   func preparePlayer() {
-    var controller: BMPlayerControlView? = nil
+    var controller: SYPlayerControlView? = nil
     
     if index.row == 0 && index.section == 2 {
-      controller = BMPlayerCustomControlView()
+      controller = SYPlayerCustomControlView()
     }
     
     if index.row == 1 && index.section == 2 {
-      controller = BMPlayerCustomControlView2()
+      controller = SYPlayerCustomControlView2()
     }
     
-    player = BMPlayer(customControlView: controller)
+    player = SYPlayer(customControlView: controller)
     view.addSubview(player)
     
     player.snp.makeConstraints { (make) in
@@ -119,7 +119,7 @@ class VideoPlayViewController: UIViewController {
                 "http://baobab.wdjcdn.com/1456653443902B.mp4",
                 "http://baobab.wdjcdn.com/1456231710844S(24).mp4"]
     let random = Int(arc4random_uniform(UInt32(urls.count)))
-    let asset = BMPlayerResource(url: URL(string: urls[random])!, name: "Video @\(random)")
+    let asset = SYPlayerResource(url: URL(string: urls[random])!, name: "Video @\(random)")
     player.setVideo(resource: asset)
   }
   
@@ -133,8 +133,8 @@ class VideoPlayViewController: UIViewController {
       
       let subtitle = BMSubtitles(url: str)
       
-      let asset = BMPlayerResource(name: "Video Name Here",
-                                   definitions: [BMPlayerResourceDefinition(url: url, definition: "480p")],
+      let asset = SYPlayerResource(name: "Video Name Here",
+                                   definitions: [SYPlayerResourceDefinition(url: url, definition: "480p")],
                                    cover: nil,
                                    subtitles: subtitle)
       
@@ -181,7 +181,7 @@ class VideoPlayViewController: UIViewController {
       
     case (2,1):
       player.videoGravity = AVLayerVideoGravity.resizeAspect
-      let asset = BMPlayerResource(url: URL(string: "http://baobab.wdjcdn.com/14525705791193.mp4")!, name: "风格互换：原来你我相爱")
+      let asset = SYPlayerResource(url: URL(string: "http://baobab.wdjcdn.com/14525705791193.mp4")!, name: "风格互换：原来你我相爱")
       player.setVideo(resource: asset)
       
     default:
@@ -201,22 +201,22 @@ class VideoPlayViewController: UIViewController {
       break
     case (0,2):
       // 设置播放器属性，此情况下若提供了cover则先展示封面图，否则黑屏。点击播放后开始loading
-      BMPlayerConf.shouldAutoPlay = false
+      SYPlayerConf.shouldAutoPlay = false
       
     case (1,0):
       // 设置播放器属性，此情况下若提供了cover则先展示封面图，否则黑屏。点击播放后开始loading
-      BMPlayerConf.topBarShowInCase = .always
+        SYPlayerConf.topBarShowInCase = .always
       
       
     case (1,1):
-      BMPlayerConf.topBarShowInCase = .horizantalOnly
+        SYPlayerConf.topBarShowInCase = .horizantalOnly
       
       
     case (1,2):
-      BMPlayerConf.topBarShowInCase = .none
+        SYPlayerConf.topBarShowInCase = .none
       
     case (1,3):
-      BMPlayerConf.tintColor = UIColor.red
+        SYPlayerConf.tintColor = UIColor.red
       
     default:
       break
@@ -227,13 +227,13 @@ class VideoPlayViewController: UIViewController {
   /**
    准备播放器资源model
    */
-  func preparePlayerItem() -> BMPlayerResource {
-    let res0 = BMPlayerResourceDefinition(url: URL(string: "http://baobab.wdjcdn.com/1457162012752491010143.mp4")!,
+  func preparePlayerItem() -> SYPlayerResource {
+    let res0 = SYPlayerResourceDefinition(url: URL(string: "http://baobab.wdjcdn.com/1457162012752491010143.mp4")!,
                                           definition: "高清")
-    let res1 = BMPlayerResourceDefinition(url: URL(string: "http://baobab.wdjcdn.com/1457162012752491010143.mp4")!,
+    let res1 = SYPlayerResourceDefinition(url: URL(string: "http://baobab.wdjcdn.com/1457162012752491010143.mp4")!,
                                           definition: "标清")
     
-    let asset = BMPlayerResource(name: "周末号外丨中国第一高楼",
+    let asset = SYPlayerResource(name: "周末号外丨中国第一高楼",
                                  definitions: [res0, res1],
                                  cover: URL(string: "http://img.wdjimg.com/image/video/447f973848167ee5e44b67c8d4df9839_0_0.jpeg"))
     return asset
@@ -241,11 +241,11 @@ class VideoPlayViewController: UIViewController {
   
   
   func resetPlayerManager() {
-    BMPlayerConf.allowLog = false
-    BMPlayerConf.shouldAutoPlay = true
-    BMPlayerConf.tintColor = UIColor.white
-    BMPlayerConf.topBarShowInCase = .always
-    BMPlayerConf.loaderType  = NVActivityIndicatorType.ballRotateChase
+      SYPlayerConf.allowLog = false
+      SYPlayerConf.shouldAutoPlay = true
+      SYPlayerConf.tintColor = UIColor.white
+      SYPlayerConf.topBarShowInCase = .always
+      SYPlayerConf.loaderType  = NVActivityIndicatorType.ballRotateChase
   }
   
   override func viewWillDisappear(_ animated: Bool) {
@@ -274,10 +274,10 @@ class VideoPlayViewController: UIViewController {
   
 }
 
-// MARK:- BMPlayerDelegate example
-extension VideoPlayViewController: BMPlayerDelegate {
+// MARK:- SYPlayerDelegate example
+extension VideoPlayViewController: SYPlayerDelegate {
   // Call when player orinet changed
-  func bmPlayer(player: BMPlayer, playerOrientChanged isFullscreen: Bool) {
+  func syPlayer(player: SYPlayer, playerOrientChanged isFullscreen: Bool) {
     player.snp.remakeConstraints { (make) in
       make.top.equalTo(view.snp.top)
       make.left.equalTo(view.snp.left)
@@ -291,22 +291,22 @@ extension VideoPlayViewController: BMPlayerDelegate {
   }
   
   // Call back when playing state changed, use to detect is playing or not
-  func bmPlayer(player: BMPlayer, playerIsPlaying playing: Bool) {
+  func syPlayer(player: SYPlayer, playerIsPlaying playing: Bool) {
     print("| BMPlayerDelegate | playerIsPlaying | playing - \(playing)")
   }
   
   // Call back when playing state changed, use to detect specefic state like buffering, bufferfinished
-  func bmPlayer(player: BMPlayer, playerStateDidChange state: BMPlayerState) {
+  func syPlayer(player: SYPlayer, playerStateDidChange state: SYPlayerState) {
     print("| BMPlayerDelegate | playerStateDidChange | state - \(state)")
   }
   
   // Call back when play time change
-  func bmPlayer(player: BMPlayer, playTimeDidChange currentTime: TimeInterval, totalTime: TimeInterval) {
+  func syPlayer(player: SYPlayer, playTimeDidChange currentTime: TimeInterval, totalTime: TimeInterval) {
     //        print("| BMPlayerDelegate | playTimeDidChange | \(currentTime) of \(totalTime)")
   }
   
   // Call back when the video loaded duration changed
-  func bmPlayer(player: BMPlayer, loadedTimeDidChange loadedDuration: TimeInterval, totalDuration: TimeInterval) {
+  func syPlayer(player: SYPlayer, loadedTimeDidChange loadedDuration: TimeInterval, totalDuration: TimeInterval) {
     //        print("| BMPlayerDelegate | loadedTimeDidChange | \(loadedDuration) of \(totalDuration)")
   }
 }

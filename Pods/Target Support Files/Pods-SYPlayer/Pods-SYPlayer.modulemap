@@ -1,0 +1,6 @@
+module Pods_SYPlayer {
+  umbrella header "Pods-SYPlayer-umbrella.h"
+
+  export *
+  module * { export * }
+}

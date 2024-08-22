@@ -1,6 +1,0 @@
-framework module SYPlayer {
-  umbrella header "SYPlayer-umbrella.h"
-
-  export *
-  module * { export * }
-}

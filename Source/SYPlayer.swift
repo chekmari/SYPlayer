@@ -1,5 +1,5 @@
 //
-//  BMPlayer.swift
+//  SYPlayer.swift
 //  Pods
 //
 //  Created by BrikerMan on 16/4/28.

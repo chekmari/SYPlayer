@@ -1,7 +1,6 @@
 ## SYPlayer
 
 ![Swift 2.2-5.0](https://img.shields.io/badge/Swift-2.2--5.0-brightgreen.svg?style=flat)
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Version](https://img.shields.io/cocoapods/v/SYPlayer.svg?style=flat)](http://cocoapods.org/pods/SYPlayer)
 [![License](https://img.shields.io/cocoapods/l/SYPlayer.svg?style=flat)](http://cocoapods.org/pods/SYPlayer)
 [![Platform](https://img.shields.io/cocoapods/p/SYPlayer.svg?style=flat)](http://cocoapods.org/pods/SYPlayer)

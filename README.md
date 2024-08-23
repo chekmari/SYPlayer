@@ -8,8 +8,9 @@
 A video player for iOS, based on AVPlayer, support the horizontal, vertical screen. support adjust volume, brightness and seek by slide, support subtitles.
 
 ## Reference:
-This project is fork the BMPlayer (https://github.com/BrikerMan/BMPlayer) 
-BMPlayer is project heavily reference the Objective-C version of this project [ZFPlayer](https://github.com/renzifeng/ZFPlayer), thanks for the generous help of ZFPlayer's author.
+This project is a fork/reference of BMPlayer (https://github.com/BrikerMan/BMPlayer).
+BMPlayer is heavily based on the Objective-C version of the project ZFPlayer. Special thanks to the authors of ZFPlayer and BMPlayer for their generous help.
+
 
 ## Contact me：
 - Blog: https://x.com/popovAleksandr_
